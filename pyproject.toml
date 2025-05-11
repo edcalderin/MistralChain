@@ -10,7 +10,8 @@ readme = "README.md"
 requires-python = ">=3.12,<4.0.0"
 dependencies = [
     "transformers (>=4.51.3,<5.0.0)",
-    "chainlit (>=2.5.5,<3.0.0)"
+    "chainlit (>=2.5.5,<3.0.0)",
+    "torch (>=2.7.0,<3.0.0)"
 ]
 
 
