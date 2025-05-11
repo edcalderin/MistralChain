@@ -1,0 +1,49 @@
+[project]
+name = "mistralchain"
+version = "0.1.0"
+description = "A lightweight interactive AI app built with Chainlit and powered by the Mistral 7B language model. Designed for flexible experimentation and rapid prototyping."
+authors = [
+    {name = "Erick",email = "edcm.erick@gmail.com"}
+]
+license = {text = "Apache License 2.0"}
+readme = "README.md"
+requires-python = ">=3.12,<4.0.0"
+dependencies = [
+    "transformers (>=4.51.3,<5.0.0)",
+    "chainlit (>=2.5.5,<3.0.0)"
+]
+
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.group.dev.dependencies]
+ruff = "^0.11.9"
+
+[tool.ruff.lint]
+select=[
+    # Pyflakes
+    "F",
+    # pycodestyle
+    "E",
+    "W",
+    # isort
+    "I",
+    # pep8-naming
+    "N",
+    # pyupgrade
+    "UP",
+    # flake8-todos
+    "TD",
+    # flake8-tidy-imports
+    "TID",
+    # flake8-import-conventions
+    "ICN",
+    # flake8-bugbear
+    "B",
+    # flake8-bandit
+    "S",
+    # flake8-simplify
+    "SIM"
+]
